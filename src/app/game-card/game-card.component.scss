@@ -1,0 +1,74 @@
+.game-card {
+  height: 100%;
+
+  .row {
+    height: 100%;
+    display: flex;
+    padding: 0 15px;
+
+    .column {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 45%;
+      flex-wrap: wrap;
+      margin: auto;
+
+      .cards {
+        // position: relative;
+        // cursor: pointer;
+        // margin: 10px;
+        position: relative;
+        height: 140px;
+        width: 100px;
+        border: none;
+        cursor: pointer;
+
+        .back {
+          position: absolute;
+        }
+
+        .front {
+          position: absolute;
+          left: 0;
+          -webkit-transition: opacity 1s ease-in-out;
+          -moz-transition: opacity 1s ease-in-out;
+          -o-transition: opacity 1s ease-in-out;
+          transition: opacity 1s ease-in-out;
+          cursor: default;
+          height: 140px;
+          width: 100px;
+        }
+
+
+        .transparent {
+          height: 140px;
+          width: 100px;
+          opacity: 0;
+        }
+
+        .back {
+          border: 1px solid #00548b;
+          height: 140px;
+          width: 100px;
+          position: absolute;
+          left: 0;
+          -webkit-transition: opacity 1s ease-in-out;
+          -moz-transition: opacity 1s ease-in-out;
+          -o-transition: opacity 1s ease-in-out;
+          transition: opacity 1s ease-in-out;
+        }
+
+        // .back ,.front {
+        .image-card {
+          width: 155px;
+          height: 155px;
+        }
+
+        // }
+      }
+    }
+  }
+
+}

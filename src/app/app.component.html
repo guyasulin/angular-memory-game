@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="navbar">
+    <app-navbar></app-navbar>
+  </div>
+
+  <div class="game-card">
+    <app-game-card [cards]="cards" (cardClicked)="cardClicked($event)"></app-game-card>
+  </div>
+</div>
